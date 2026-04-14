@@ -13,7 +13,7 @@ echo === CMake生成 ===
 cmake -B build -DGGML_CUDA=ON
 
 echo === ビルド開始 ===
-cmake --build build --config Release
+cmake --build build --config Release -j 8
 
 echo === 完了 ===
 pause
